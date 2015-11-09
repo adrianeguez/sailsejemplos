@@ -9,7 +9,8 @@ module.exports = {
 
   attributes: {
       nombre: {
-            type: 'string'
+            type: 'string',
+            required:true
         },
       apellido: {
             type: 'string'
@@ -20,7 +21,11 @@ module.exports = {
       password: {
             type: 'string',
             defaultsTo: 123456 
-        }
+        },
+      fecha:{
+            type:'date',
+          required:true
+      }
 
   }
 };
